@@ -15,3 +15,8 @@
   然后Eclipse出现了新的错误，原来的错误可能解决了吧。
   
   - 位数匹配
+  后来出现的错误提示是`Failed to load the JNI shared library jvm.dll`，百度后知道是位数不匹配。找了个64bit的Eclipse来下。就可以了
+
+
+> 现在写完了Hello World运行完也没什么问题，就后怕那个在环境变量那边删掉的`C:\ProgramData\Oracle\Java\javapath`会不会有影响。
+ 
