@@ -2,4 +2,11 @@
 
  - 问题和解决
   - 环境变量
+  由于之前安装过Java环境，我不确定在环境变量那边多出来的`C:\ProgramData\Oracle\Java\javapath`是不是系统自己生成的。所以我把他删掉了。
+  所有有关java的我都删掉了，然后我把新安的jdk的地址添了上去，分别是
+  ```
+  ‪D:\Program Files\Java\jdk1.8.0_91\jre\bin;
+  ‪D:\Program Files\Java\jdk1.8.0_91\jre\bin;
+  ```
+  
   - 位数匹配
