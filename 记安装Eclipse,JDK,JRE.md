@@ -20,3 +20,6 @@
 
 > 现在写完了Hello World运行完也没什么问题，就后怕那个在环境变量那边删掉的`C:\ProgramData\Oracle\Java\javapath`会不会有影响。
  
+ 
+> 另外这个链接是另外一个学弟在安装的时候遇到的新问题，在按照以上方法操作之后仍然没得到解决。在输入javac后，出现了   找不到或无法加载主类 com.sun.tools.javac.Main  的问题，原因是JDK和JRE安装在了同一个文件夹下导致的问题。对应以下有链接：     
+http://blog.csdn.net/sun1956/article/details/8760239
