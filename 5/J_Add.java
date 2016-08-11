@@ -8,7 +8,7 @@
 // 			泛型例程//模板类
 // ////////////////////////////////////////////
 // 定义了一个J_Add类
-public class J_Add <T>
+public class J_Add <T extends java.lang.Object>
 {
 	public String mb_sum(T a1,T a2,T a3){
 		return (a1.toString()+a2.toString()+a3.toString());
