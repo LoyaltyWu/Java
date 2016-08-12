@@ -45,6 +45,8 @@ public class J_BufferedInputStream
 			d1 = new Date();
 			f = new FileInputStream(m_fileName);
 			BufferedInputStream fb = new BufferedInputStream(f);
+		//^^^^^^^^										 ^^^^^^^^
+			// ”√¡Àª∫≥Âµƒ..
 			while ((ch=fb.read()) != -1) // read entire file
 			{
 				i++;
