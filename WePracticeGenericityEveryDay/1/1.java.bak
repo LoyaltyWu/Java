@@ -1,0 +1,32 @@
+//1.java
+interface Shpe 
+{
+	public abstract double Area();
+}
+class J_Cir implements Shpe
+{
+	private final doouble PI = Math.PI;
+	private double radius;
+	public J_Cir(double r=1)
+	{
+		radius = r;
+	}
+	double Area()
+	{
+		return PI*radius*radius;
+	}
+}
+class J_Rec implements Shpe
+{
+	private double wid;
+	private double len;
+	J_Rec(double w = 6,double l = 1)
+	{
+		wid = w;
+		len = l;
+	}
+	double Area()
+	{
+		return wid*len;
+	}
+}

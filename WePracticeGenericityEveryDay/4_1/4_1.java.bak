@@ -1,0 +1,48 @@
+interface shpe
+{
+	abstract public String name();
+	abstract public double area();
+}
+
+class cir implements shpe
+{
+	private double radius;
+	private double PI = Math.PI;
+	public cir(double r)
+	{
+		radius = r;
+	}
+	double area()
+	{
+		return PI*radius*radius;
+	}
+}
+
+class rec implements shpe
+{
+	private width,lenth;
+	public rec(double l,double w)
+	{
+		lenth = l;
+		width = w;
+	}
+	public double area()
+	{
+		return lenth*width;
+	}
+}
+
+class o <T extends shpe>
+{
+	public void out(T t)
+	{
+		System.out.println(t.name()+" "+t.area());
+	}
+}
+public class d4_1
+{
+	public static void main(String args[]){
+		o <cir> a = new o<cir>();
+		a.out(new cir(88));
+	}
+}
