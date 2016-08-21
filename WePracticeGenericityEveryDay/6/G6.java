@@ -1,0 +1,37 @@
+// Genericity
+// G6.java
+
+interface Shpe
+{
+	public abstract double getArea();
+}
+
+class J_Cir implements Shpe
+{
+	private double radius;
+	private final double PI = Math.PI;
+	public J_Cir(){
+		radius = 1;
+	}
+	public J_Cir(double r){
+		radius = r;
+	}
+	public double getArea(){
+		return PI*radius;
+	}
+}
+
+class F <T extends Shpe>{
+	public void out(T t){
+		System.out.println("Its area is "+t.getArea());
+	}
+}
+
+public class G6
+{
+	public static void main (String [] args){
+		F<J_Cir> a = new F <J_Cir>();
+		a.out(new J_Cir(2));
+	}
+}
+		
